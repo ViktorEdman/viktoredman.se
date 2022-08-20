@@ -1,0 +1,48 @@
+.spin {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.img {
+  border-radius: 90px;
+}
+
+.tilt {
+  animation-name: tilt;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  25% {
+    left: 100%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: -100%;
+  }
+  100% {
+    transform: rotate(360deg);
+    left: 0%;
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
