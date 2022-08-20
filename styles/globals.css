@@ -8,10 +8,21 @@ body {
 }
 
 a {
-  color: inherit;
+  color: blue;
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(5, 103, 136);
+}
+
+a:visited {
+  color: purple;
+}
+
+img:hover {
+  opacity:0.5;
+}
 
 
 * {
