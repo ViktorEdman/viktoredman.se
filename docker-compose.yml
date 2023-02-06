@@ -1,0 +1,14 @@
+version: '3'
+services:
+  next:
+    build: .
+    container_name: viktoredmannext
+    command: npm run start
+    working_dir: /app
+    volumes:
+      - .:/app
+    networks:
+      - nginx-proxy-manager_default
+networks:
+  nginx-proxy-manager_default:
+    external: true

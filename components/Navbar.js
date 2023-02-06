@@ -21,6 +21,9 @@ export default function Navbar() {
         <Link href="/bro">
           <a className={styles.navigationLink}>Bro</a>
         </Link>
+        <Link href="/cv">
+          <a className={styles.navigationLink}>CV</a>
+        </Link>
       </nav>
     </>
   );
